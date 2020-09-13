@@ -55,9 +55,6 @@
     transform: scale(0);
     opacity: 0
   }
-  .navbar{
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
   .menu{
     position: fixed;
     background: linear-gradient(222.21deg, #014282 -112.84%, #0E578E -70.88%, #0E578E -2.29%, #1566A5 73.09%);
