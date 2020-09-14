@@ -76,6 +76,7 @@
     width: 100%;
     background: #fff;
   }
+
   .up_menu li{
     margin-top: 60px;
     display: flex;
@@ -87,6 +88,7 @@
     font-size: 3em;
   }
   ul{
+    display: block!important;
     margin-top: 80px;
     padding: 1px;
   }
