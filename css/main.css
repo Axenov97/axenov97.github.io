@@ -15,7 +15,6 @@ button{
 	margin:0;
 	padding: 0;
 }
-
 h1{
 	font-weight: normal;
 	font-size:5em;
@@ -24,7 +23,6 @@ h1{
 	text-transform: uppercase;
 	margin-top: 55px;
 }
-
 h2{
 	color:#FFFFFF;
 	font-weight: 500;
@@ -102,18 +100,28 @@ h2{
 }
 
 nav{
-	margin-top: 40px;
-    margin-left: 5%;
-}
-.up_menu li{
-	margin-top: 40px;
 	display: flex;
+	width: 65%;
 }
-.down_menu li{
+.up_menu{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 10%;
+}
+li{
+	list-style-type: none;
+}
+.up_menu>li{
+	margin-top: 40px;
+    display: flex;
+    margin-left: 60px;
+}
+/*.down_menu li{
 	margin-top: 20px;
 	display: flex;
-}
-.up_menu li a{
+}*/
+.up_menu>li a{
 	text-decoration: none;
 	color: #1464A2;
 	font-weight: 500;
@@ -129,12 +137,41 @@ ul li a:hover{
 	color: #EE3395;
 	text-shadow: -4px 6px 4px rgba(0, 0, 0, 0.2);
 }
+ul li a:active, ul li a:focus{
+	color: #EE3395;
+	text-decoration: underline;
+}
+.up_menu>li:hover .sub_menu>li {
+	transform: translate(0);
+	opacity: 1;
+}
+.sub_menu{
+	top:60px;
+	position: absolute;
+	padding-top: 10px;
+    width: 100px;
+}
+.sub_menu>li{
+	text-decoration: none;
+	transform: translate(0,-100px);
+	opacity: 0;
+	margin-top: 40px;
+}
+.sub_li_first{
+	transition: all .1s ease-out .1s ;
+}
+.sub_li_second{
+	transition: all .2s ease-out .2s;
+}
+.sub_li_three{
+	transition: all .3s ease-out .3s;
+}
 .contact a:hover{
 	transform: translate(4px, -4px);
     color: #1464A2;
 	text-shadow: -4px 6px 4px rgba(0, 0, 0, 0.2);	
 }
-.down_menu{
+/*.down_menu{
 	position: absolute;
     bottom: 10%;
 }
@@ -152,7 +189,7 @@ ul li a:hover{
 	font-size: 1.6em;
 	line-height: 24px;
 	text-transform: uppercase;
-}
+}*/
 .contact-block{
 	margin-top: 50px;
 	margin-right: 100px;
@@ -247,7 +284,6 @@ ul li a:hover{
 .navbar_body{
 	display: flex;
     justify-content: flex-end;
-    width: 100%;
 }
 .main{
 	display: grid;
