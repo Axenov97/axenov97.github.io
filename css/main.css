@@ -170,6 +170,9 @@ ul li a:hover, .contact a:hover{
     border-bottom: 1px dashed #B11F6A;
     padding-bottom: 2px;
 }
+.purp-btn:hover{
+	border-bottom-style: solid;
+}
 .bg{
     position: absolute;
     top: 10%;
