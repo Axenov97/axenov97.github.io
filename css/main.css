@@ -130,7 +130,7 @@ ul li a:hover{
     text-shadow: -4px 4px 5px #e62b8b;
 }
 .contact a:hover{
-transform: translate(4px, -4px);
+	transform: translate(4px, -4px);
     color: #1464A2;
     text-shadow: -4px 4px 5px #1464A2;	
 }
@@ -184,15 +184,47 @@ transform: translate(4px, -4px);
 	border-bottom-style: solid;
 }
 .bg{
+	display: none;
+}
+.main img {
+	max-width: 100%;
+    height: auto;
     position: absolute;
-    top: 10%;
+}
+.main .map{   
+	width: 60%;
+    top: 130px;
     left: 30%;
-    z-index: 0;
-    background: url(../img/main.svg) no-repeat top;
-    background-size: contain;
-    width: 100%;
-    height: 90%;
-    max-width: 60%;
+}
+.main .ship{
+	width: 30%;
+    top: -50%;
+    left: 0;
+	transition: all 1.2s ease-out ;
+}
+.main .ship.active{
+    top: 5%;
+    left: 55%;
+}
+.main .truck{
+	width: 8%;
+    top: 42%;
+    left: 51%;
+}
+.main .train{
+	width: 19%;
+    top: 36%;
+    left: 63%;
+}
+.main .plane{
+	width: 15%;
+    top: 80%;
+    left: -50%;
+    transition: all 2s ease-out ;
+}
+.main .plane.active{
+    top: 10%;
+    left: 38%;
 }
 
 /*grid*/
