@@ -121,8 +121,17 @@ nav{
 	line-height: 24px;
 	text-transform: uppercase;
 }
-ul li a:hover, .contact a:hover{
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+ul li a:hover{
+	transform: translate(4px, -4px);
+    color: #e62b8b;
+    text-shadow: -4px 4px 5px #e62b8b;
+    transition: all 0.2s linear;
+}
+.contact a:hover{
+transform: translate(4px, -4px);
+    color: #1464A2;
+    text-shadow: -4px 4px 5px #e62b8b;
+    transition: all 0.2s linear;	
 }
 .down_menu{
 	position: absolute;
