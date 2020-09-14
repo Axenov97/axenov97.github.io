@@ -126,13 +126,13 @@ nav{
 }
 ul li a:hover{
 	transform: translate(4px, -4px);
-    color: #e62b8b;
-    text-shadow: -4px 4px 5px #e62b8b;
+	color: #EE3395;
+	text-shadow: -4px 6px 4px rgba(0, 0, 0, 0.2);
 }
 .contact a:hover{
 	transform: translate(4px, -4px);
     color: #1464A2;
-    text-shadow: -4px 4px 5px #1464A2;	
+	text-shadow: -4px 6px 4px rgba(0, 0, 0, 0.2);	
 }
 .down_menu{
 	position: absolute;
