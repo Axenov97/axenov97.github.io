@@ -194,14 +194,14 @@ p{
 }
 .parallax__cloud_1{
 	background:url(../img/cloud/cloud_1.svg)  100% no-repeat;
-	left: 10%;
+	left: 5%;
 	top: 15%;
 	width: 116px;
 	height: 50px;
 }
 .parallax__cloud_2{
 	background:url(../img/cloud/cloud_2.svg)  100% no-repeat;
-	left: 30%;
+	left: 20%;
 	top: 5%;
 	width: 280px;
 	height: 95px;
@@ -209,29 +209,42 @@ p{
 
 .parallax__cloud_3{
 	background:url(../img/cloud/cloud_3.svg)  100% no-repeat;
-	left: 45%;
+	left: 40%;
 	top: 15%;
-	height: 50px;
+	width: 240px;
+	height: 100px;
 }
 
 .parallax__cloud_4{
 	background:url(../img/cloud/cloud_4.svg)  100% no-repeat;
 	left: 60%;
-	top: 5%;
+	top: 10%;
+	width: 240px;
+	height: 80px;
 }
 .parallax__cloud_5{
 	background:url(../img/cloud/cloud_5.svg)  100% no-repeat;
 	left: 75%;
 	top: 15%;
-	height: 50px;
+	width: 245px;
+	height: 80px;
 }
 .parallax__cloud_6{
 	background:url(../img/cloud/cloud_6.svg)  100% no-repeat;
-	left: 95%;
+	left: 90%;
 	top: 20%;
-	height: 50px;
+	width: 265px;
+	height: 80px;
 }
-
+.parallax__ship{
+	position: absolute;
+	width: 100%;
+	background:url(../img/ship.svg) 100% no-repeat;
+	bottom: 270px;
+	right:  20%;
+	height: 170px;
+	animation: ship 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
 .parallax__wave{
 	position: absolute;
 	left: -10%;
@@ -281,5 +294,13 @@ p{
 	}
 	100%{
 		transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);	
+	}
+}
+@keyframes ship {
+	0%{
+		transform: translate3d(2%,0,0) rotateZ(2deg);
+	}
+	100%{
+		transform: translate3d(-2%,0,0) rotateZ(-2deg);	
 	}
 }
