@@ -4,17 +4,16 @@
 	border:0;
 	box-sizing: border-box;
 	font-size: 10px;
-	/*background-color: #161F26;*/
+	font-family: Montserrat, sans-serif;
 }
 html, body{
-	font-family: Montserrat;
 	height: 100%;
 }
 h1{
 	font-style: normal;
 	font-weight: 200;
-	font-size: 14em;
-	line-height: 115px;
+	font-size: 10em;
+	line-height: 80px;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
@@ -23,19 +22,7 @@ h1{
 	background-color: #161F26;
 	color: #fff;
 }
-
-.parallax__title{
-	position: fixed;
-	z-index: 2;
-	transform: translateX(-100%);
-    transition: all .8s ease-out ;
-    top: 360px;
-    width: 100%;
-}
-.parallax__title.active{
-	transform: translateX(0);
-}
-p{
+.content p{
 	font-size: 2.5em;
 	padding: 5%;
 	line-height: 30px;
@@ -58,13 +45,7 @@ p{
 	flex-direction: column;
 	min-height: 360px;
 }
-.menu{
-	transform: translateY(-500%);
-	transition: all .8s ease-out .5s ;
-}
-.menu.active{
-	transform: translateY(0);
-}
+
 .header{
 	transform: translateY(-100%);
 	 transition: all .8s ease-out .3s ;
@@ -79,12 +60,12 @@ p{
 }
 .header__brand img{
 	width: 100%;
-	padding: 30px 0 0 40px;
+	padding: 30px;
 }
 .header__call{
 	display: flex;
 	justify-content: flex-end;
-	width: 50%
+	width: 80%
 }
 .header__call p, .header__call a {
 	font-style: normal;
@@ -95,13 +76,16 @@ p{
 	color: #FFFFFF;
 	text-decoration:none;
 }
+.header__call p{
+	padding: 30px;
+}
 .btn{
 	cursor: pointer;
 }
 .header__call_btn{
 	width: 250px;
 	height: 35px;
-	margin: 5% 5% 0 0 ;
+	margin: 30px 30px 0 10px ;
 	background-color: transparent;
 	border: 1px solid #fff;
 	font-style: normal;
@@ -112,7 +96,7 @@ p{
 	color: #FFFFFF;
 }
 .header__call_lang{
-	margin: 5% 5% 0 0 ;
+	margin: 30px 30px 0 0 ;
 }
 .header__call_lang a{
 	display: block;
@@ -126,6 +110,8 @@ p{
 	width: 100%;
 }
 .menu{
+	transform: translateY(-500%);
+	transition: all .8s ease-out .5s ;
 	position: absolute;
 	z-index: 5;
 	list-style: none;
@@ -135,8 +121,11 @@ p{
     background: rgb(0 0 0 / 0.1);
 	justify-content: space-between;
 }
+.menu.active{
+	transform: translateY(0);
+}
 .menu li{
-	padding: 2% 5%;
+	padding: 15px 10%;
 }
 .menu li a{
 	text-decoration: none;
@@ -152,155 +141,3 @@ p{
 }
 
 
-/*parallax*/
-.parallax{
-	flex: 1 0 100%;
-	position: relative;
-	overflow: hidden;
-}
-.parallax:after{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
-	background: #161F26;
-}
-.parallax__bg{
-	position: absolute;
-	top: -5%;
-	left: -5%;
-	width: 110%;
-	height: 110%;
-	background: url('../img/bg.jpg') 50% 100% /cover no-repeat ;
-}
-.parallax__list {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.parallax__list li{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	list-style-type: none;
-}
-.parallax__cloud{
-	position: absolute;
-}
-.parallax__cloud_1{
-	background:url(../img/cloud/cloud_1.svg)  100% no-repeat;
-	left: 5%;
-	top: 15%;
-	width: 116px;
-	height: 50px;
-}
-.parallax__cloud_2{
-	background:url(../img/cloud/cloud_2.svg)  100% no-repeat;
-	left: 20%;
-	top: 5%;
-	width: 280px;
-	height: 95px;
-}
-
-.parallax__cloud_3{
-	background:url(../img/cloud/cloud_3.svg)  100% no-repeat;
-	left: 40%;
-	top: 15%;
-	width: 240px;
-	height: 100px;
-}
-
-.parallax__cloud_4{
-	background:url(../img/cloud/cloud_4.svg)  100% no-repeat;
-	left: 60%;
-	top: 10%;
-	width: 240px;
-	height: 80px;
-}
-.parallax__cloud_5{
-	background:url(../img/cloud/cloud_5.svg)  100% no-repeat;
-	left: 75%;
-	top: 15%;
-	width: 245px;
-	height: 80px;
-}
-.parallax__cloud_6{
-	background:url(../img/cloud/cloud_6.svg)  100% no-repeat;
-	left: 90%;
-	top: 20%;
-	width: 265px;
-	height: 80px;
-}
-.parallax__ship{
-	position: absolute;
-	width: 530px;
-	height: 170px;
-	bottom: 30%;
-	right:  10%;
-	background:url(../img/ship.svg) 100% no-repeat;
-	animation: ship 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-.parallax__wave{
-	position: absolute;
-	left: -10%;
-	bottom: -100vh;
-	width: 120%;
-}
-.parallax__wave_1{
-	background:url(../img/wave/wave_1.svg) 0 0 / auto 101% repeat-x;
-	bottom: -5%;
-	height: 400px;
-	animation: wave 7.11111s 0.1s infinite linear;
-}
-.parallax__wave_2{
-	background:url(../img/wave/wave_2.svg) 0 0 / auto 133% repeat-x;
-	bottom: 10%;
-	height: 401px;
-	animation: wave 6.66667s 0.1s infinite linear;
-}
-.parallax__wave_3{
-	background:url(../img/wave/wave_3.svg) 0 0 / auto 133% repeat-x;
-	bottom: 10%;
-	height: 234px;
-	animation: wave 6.222222s 0.1s infinite linear;
-}
-.parallax__wave_4{
-	background:url(../img/wave/wave_4.svg) 0 0 / auto 133% repeat-x;
-	bottom: 11%;
-	height: 301px;
-	animation: wave 5.77778s 0.1s infinite linear;
-}
-.parallax__wave_5{
-	background:url(../img/wave/wave_5.svg) 0 0 / auto 133% repeat-x;
-	bottom: 18%;
-	height: 333px;
-	animation: wave 5.223332s 0.1s infinite linear;
-}
-.parallax__wave_6{
-	background:url(../img/wave/wave_6.svg) 0 0 / auto 133% repeat-x;
-	bottom: 25%;
-	height: 355px;
-	animation: wave 5.11111s 0.1s infinite linear;
-}
-
-@keyframes wave {
-	0%{
-		transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
-	}
-	100%{
-		transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);	
-	}
-}
-@keyframes ship {
-	0%{
-		transform: translate3d(5%,0,0) rotateZ(5deg);
-	}
-	100%{
-		transform: translate3d(-5%,0,0) rotateZ(-5deg);	
-	}
-}

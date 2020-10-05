@@ -1,3 +1,25 @@
 @media (min-width: 1024px) and (max-width: 1600px){
 	*,*:before,*:after{font-size: 9px;}
+	.menu li{
+		padding: 15px 7%;
+	}
 } 
+@media (min-width: 769px) and (max-width: 1024px){
+	*,*:before,*:after{font-size: 8.5px;}
+	.menu li{
+		padding: 10px 5%;
+	}	
+	.header__call_btn{
+		font-size: 1.2em;
+		width: 25%;
+	}
+	.header__call p {
+    	padding: 30px 15px;
+	}
+}
+@media (min-width: 400px) and (max-width: 768px){
+	*,*:before,*:after{font-size: 8.2px;}
+	.menu li{
+		padding: 10px 2%;
+	}	
+}

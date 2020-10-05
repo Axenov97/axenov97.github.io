@@ -1,0 +1,163 @@
+/*parallax*/
+.parallax__title{
+	position: fixed;
+	z-index: 2;
+	transform: translateX(-100%);
+    transition: all .8s ease-out ;
+    top: 300px;
+    width: 100%;
+}
+.parallax__title.active{
+	transform: translateX(0);
+}
+.parallax{
+	flex: 1 0 100%;
+	position: relative;
+	overflow: hidden;
+}
+.parallax:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background: #161F26;
+}
+.parallax__bg{
+	position: absolute;
+	top: -5%;
+	left: -5%;
+	width: 110%;
+	height: 110%;
+	background: url('../img/bg.jpg') 50% 100% /cover no-repeat ;
+}
+.parallax__list {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.parallax__list li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	list-style-type: none;
+}
+.parallax__cloud{
+	position: absolute;
+}
+.parallax__cloud_1{
+	background:url(../img/cloud/cloud_1.svg)  0 0 / contain no-repeat;
+	left: 5%;
+	top: 15%;
+	width: 10%;
+	height: 5%;
+}
+.parallax__cloud_2{
+	background:url(../img/cloud/cloud_2.svg) 0 0 / contain no-repeat;
+	left: 15%;
+	top: 2%;
+	width: 20%;
+	height: 10%;
+}
+
+.parallax__cloud_3{
+	background:url(../img/cloud/cloud_3.svg) 0 0 / contain no-repeat;
+	left: 30%;
+	top: 10%;
+	width: 20%;
+	height: 10%;
+}
+
+.parallax__cloud_4{
+	background:url(../img/cloud/cloud_4.svg) 0 0 / contain no-repeat;
+	left: 47%;
+	top: 5%;
+	width: 15%;
+	height: 8%;
+}
+.parallax__cloud_5{
+	background:url(../img/cloud/cloud_5.svg) 0 0 / contain no-repeat;
+	left: 65%;
+	top: 8%;
+	width: 20%;
+	height: 10%;
+}
+.parallax__cloud_6{
+	background:url(../img/cloud/cloud_6.svg)  0 0 / contain no-repeat;
+	left: 83%;
+	top: 12%;
+	width: 20%;
+	height: 10%;
+}
+.parallax__ship{
+	position: absolute;
+	width: 530px;
+	height: 170px;
+	bottom: 25%;
+	right:  10%;
+	background:url(../img/ship.svg) 100% no-repeat;
+	animation: ship 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.parallax__wave{
+	position: absolute;
+	left: -10%;
+	bottom: -100vh;
+	width: 120%;
+}
+.parallax__wave_1{
+	background:url(../img/wave/wave_1.svg) 0 0 / auto 101% repeat-x;
+	bottom: -10%;
+	height: 400px;
+	animation: wave 7.11111s 0.1s infinite linear;
+}
+.parallax__wave_2{
+	background:url(../img/wave/wave_2.svg) 0 0 / auto 133% repeat-x;
+	bottom: 5%;
+	height: 401px;
+	animation: wave 6.66667s 0.1s infinite linear;
+}
+.parallax__wave_3{
+	background:url(../img/wave/wave_3.svg) 0 0 / auto 133% repeat-x;
+	bottom: 5%;
+	height: 234px;
+	animation: wave 6.222222s 0.1s infinite linear;
+}
+.parallax__wave_4{
+	background:url(../img/wave/wave_4.svg) 0 0 / auto 133% repeat-x;
+	bottom: 6%;
+	height: 301px;
+	animation: wave 5.77778s 0.1s infinite linear;
+}
+.parallax__wave_5{
+	background:url(../img/wave/wave_5.svg) 0 0 / auto 133% repeat-x;
+	bottom: 13%;
+	height: 333px;
+	animation: wave 5.223332s 0.1s infinite linear;
+}
+.parallax__wave_6{
+	background:url(../img/wave/wave_6.svg) 0 0 / auto 133% repeat-x;
+	bottom: 20%;
+	height: 355px;
+	animation: wave 5.11111s 0.1s infinite linear;
+}
+
+@keyframes wave {
+	0%{
+		transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);	
+	}
+}
+@keyframes ship {
+	0%{
+		transform: translate3d(5%,0,0) rotateZ(5deg);
+	}
+	100%{
+		transform: translate3d(-5%,0,0) rotateZ(-5deg);	
+	}
+}
