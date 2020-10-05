@@ -10,6 +10,20 @@
 .parallax__title.active{
 	transform: translateX(0);
 }
+.parallax__title_btn{
+	cursor: pointer;
+	display: block;
+	margin: 10% auto;
+	padding:  2%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #161F26;
+	background: #FFFFFF;
+	box-shadow: 0px 8px 6px rgba(255, 255, 255, 0.4);
+}
 .parallax{
 	flex: 1 0 100%;
 	position: relative;
@@ -98,9 +112,14 @@
 	width: 530px;
 	height: 170px;
 	bottom: 25%;
-	right:  10%;
+	right:  -100%;
 	background:url(../img/ship.svg) 100% no-repeat;
 	animation: ship 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transform: translateX(100%);
+	transition: all 4s ease-out;
+}
+.parallax__ship.active{
+	right: 10%;
 }
 .parallax__wave{
 	position: absolute;

@@ -12,5 +12,7 @@ $(document).ready(function(){
 		document.querySelector('.header').classList.add('active');
 		document.querySelector('.menu').classList.add('active');
 		document.querySelector('.parallax__title').classList.add('active');
+		document.querySelector('.parallax__ship').classList.add('active');
+
 	},300);
   }
