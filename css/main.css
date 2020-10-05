@@ -4,6 +4,7 @@
 	border:0;
 	box-sizing: border-box;
 	font-size: 10px;
+	/*background-color: #161F26;*/
 }
 html, body{
 	font-family: Montserrat;
@@ -41,6 +42,11 @@ p{
 }
 .wrapper{
 	overflow: hidden;
+	transition: all .7s ease ;
+	opacity: 0;
+}
+.wrapper.active{
+	opacity: 1;
 }
 .page{
 	position: absolute;
