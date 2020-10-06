@@ -1,11 +1,11 @@
 /*parallax*/
 .parallax__title{
-	position: fixed;
-	z-index: 2;
+	position: relative;
+	z-index: 5;
 	transform: translateX(-100%);
     transition: all .8s ease-out ;
     top: 300px;
-    width: 100%;
+    width: 75%;
 }
 .parallax__title.active{
 	transform: translateX(0);
@@ -13,10 +13,10 @@
 .parallax__title_btn{
 	cursor: pointer;
 	display: block;
-	margin: 10% auto;
-	padding:  2%;
+	margin: 5% auto;
+	padding:  2.5% 10%;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -27,26 +27,37 @@
 .parallax{
 	flex: 1 0 100%;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
-.parallax:after{
+
+/*.parallax:after{
 	content: '';
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 30px;
 	background: #161F26;
+}*/
+.parallax__content{
+	height: 300vh;
 }
 .parallax__bg{
+	display: flex;
 	position: absolute;
-	top: -5%;
-	left: -5%;
-	width: 110%;
-	height: 110%;
-	background: url('../img/bg.jpg') 50% 100% /cover no-repeat ;
+    width: 100%;
+    height: 100%;	
 }
-.parallax__list {
-	position: absolute;
+.parallax__bg_1{
+	background: linear-gradient(180deg, #1566A5 0%, #161F26 100%);
+}
+.parallax__bg_2{
+	background: url('../img/bg_2.svg') center 10% /contain repeat-y ;
+}
+.parallax__bg_3{
+	background: url('../img/bg_3.svg') center 10% /contain no-repeat ;
+}
+.parallax__list{
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -111,7 +122,7 @@
 	position: absolute;
 	width: 530px;
 	height: 170px;
-	bottom: 25%;
+	bottom: 18%;
 	right:  -100%;
 	background:url(../img/ship.svg) 100% no-repeat;
 	animation: ship 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -119,7 +130,7 @@
 	transition: all 4s ease-out;
 }
 .parallax__ship.active{
-	right: 10%;
+	right: 5%;
 }
 .parallax__wave{
 	position: absolute;
@@ -129,37 +140,43 @@
 }
 .parallax__wave_1{
 	background:url(../img/wave/wave_1.svg) 0 0 / auto 101% repeat-x;
-	bottom: -10%;
+	bottom: -15%;
 	height: 400px;
 	animation: wave 7.11111s 0.1s infinite linear;
 }
 .parallax__wave_2{
-	background:url(../img/wave/wave_2.svg) 0 0 / auto 133% repeat-x;
-	bottom: 5%;
+	background:url(../img/wave/wave_2.svg) 0 0 / auto 101% repeat-x;
+	bottom: -15%;
 	height: 401px;
 	animation: wave 6.66667s 0.1s infinite linear;
 }
 .parallax__wave_3{
-	background:url(../img/wave/wave_3.svg) 0 0 / auto 133% repeat-x;
+	background:url(../img/wave/wave_3.svg) 0 0 / auto 101% repeat-x;
 	bottom: 5%;
 	height: 234px;
 	animation: wave 6.222222s 0.1s infinite linear;
 }
 .parallax__wave_4{
-	background:url(../img/wave/wave_4.svg) 0 0 / auto 133% repeat-x;
-	bottom: 6%;
+	background:url(../img/wave/wave_4.svg) 0 0 / auto 101% repeat-x;
+	bottom: 5%;
 	height: 301px;
 	animation: wave 5.77778s 0.1s infinite linear;
 }
 .parallax__wave_5{
-	background:url(../img/wave/wave_5.svg) 0 0 / auto 133% repeat-x;
-	bottom: 13%;
+	background:url(../img/wave/wave_5.svg) 0 0 / auto 101% repeat-x;
+	bottom: 1%;
 	height: 333px;
 	animation: wave 5.223332s 0.1s infinite linear;
 }
 .parallax__wave_6{
-	background:url(../img/wave/wave_6.svg) 0 0 / auto 133% repeat-x;
-	bottom: 20%;
+	background:url(../img/wave/wave_6.svg) 0 0 / auto 101% repeat-x;
+	bottom: 1%;
+	height: 355px;
+	animation: wave 5.11111s 0.1s infinite linear;
+}
+.parallax__wave_7{
+	background:url(../img/wave/wave_7.svg) 0 0 / auto 101% repeat-x;
+	bottom: 1%;
 	height: 355px;
 	animation: wave 5.11111s 0.1s infinite linear;
 }
@@ -174,9 +191,9 @@
 }
 @keyframes ship {
 	0%{
-		transform: translate3d(5%,0,0) rotateZ(5deg);
+		transform: translate3d(2%,0,0) rotateZ(5deg);
 	}
 	100%{
-		transform: translate3d(-5%,0,0) rotateZ(-5deg);	
+		transform: translate3d(-2%,0,0) rotateZ(-5deg);	
 	}
 }
