@@ -5,96 +5,296 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Балткомплект</title>
 
+	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-
-
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="css/parallax.css">
-
 </head>
-<body>
-	<div class="wrapper">
-		<div class="page">
-			<div class="parallax">
-				<div class="parallax__content">
 
-					<header>	
-						<div class="header">	
-							<div class="header__brand">
-								<img src="img/logo.svg" alt="">
-							</div>	
-							<div class="header__call">					
-								<p>Бесплатно по России <br>
-									<a href="tel:8 800 775-47-94">8 800 775-47-94</a>
-								</p>
-								<p>В Санкт-Петербурге <br>
-									<a href="tel:8 800 775-47-94">8 (812)) 718-69-70</a>
-								</p>	
-								<button class="header__call_btn btn"> Перезвоните мне</button>
-								<div class="header__call_lang">
-									<a href="#" class="disable">ENG</a>
-									<a href="#" >RUS</a>
-								</div>		
-							</div>	
-						</div>
+<body>
+
+	<header class="header">	
+		<div class="header-body">
+				<div class="flex-container">
+					<div class="header__bg"></div>
+					<div class="header__burger">
+						<span></span>
+					</div>
+
+					<div class="header__brand">
+						<a href="#" class="header__brand_link link">
+							<img src="img/logo.svg" alt="Baltkomplekt">
+						</a>			
+					</div>
+
+					<div class="header__navigation">
 						<nav class="navigation">
-							<ul class="menu" data-depth="0.10">
-								<li class="menu__logo"><a href="#"><img src="img/logo.svg" alt=""></a></li>
+							<ul class="menu">
 								<li><a href="#">Услуги</a></li>
 								<li><a href="#">Блог</a></li>
 								<li><a href="#">Контакты</a></li>
 								<li><a href="#">О нас</a></li>
 							</ul>
-						</nav>			
-					</header>
-					<div class="parallax__bg grid">			
-						<div class="parallax__bg parallax__bg_1"></div>
-						<div class="parallax__title title">
-							<h1>Таможенный<br>брокер</h1>
-							<button class="parallax__title_btn btn">Рассчитать перевозку</button>
-						</div>	
-						<div class="form">
-							<form>
-							<!-- Hidden Required Fields -->
-								<input type="hidden" name="project_name" value="baltkomplekt"> 
-								<input type="hidden" name="admin_email" value="info@baltkomplekt.ru">
-								<input type="hidden" name="form_subject" value="Заявка с формы обратной связи сайта">
-							 <!-- END Hidden Required Fields -->
-								<div class="form-group">
-									<input type="text" class="form__name" name="Имя" placeholder="Имя">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form__name" name="Телефон" placeholder="Телефон">
-								</div>
-								<button type="submit" class="btn btn-start ">Перезвонить</button>
-							</form>					
+						</nav>								
+					</div>
+
+					<div class="header__numbers">					
+						<p>Бесплатно по РФ <br>
+							<a href="tel:+78007754794">8 800 775-47-94</a>
+						</p>
+						<p>В Санкт-Петербурге <br>
+							<a href="tel:+78127186970">8 (812) 718-69-70</a>
+						</p>	
+					</div>
+
+					<div class="header__btn">
+						<button class="header__btn_call btn"> Перезвоните мне</button>
+					</div>
+
+					<div class="header__lang">
+						<a href="#" class="header__lang_link">ENG</a>
+						<a href="#" class="header__lang_link">RUS</a>
+					</div>
+					
+				</div>	
+
+				<div class="numbers-responsive">					
+					<p>Бесплатно по РФ <br>
+						<a href="tel:+78007754794">8 800 775-47-94</a>
+					</p>
+					<p>В Санкт-Петербурге <br>
+						<a href="tel:+78127186970">8 (812) 718-69-70</a>
+					</p>	
+				</div>
+			</div>
+	</header>	
+
+	<div class="content">
+		<section class="first__section">
+			<div class="container">
+				<div class="flex-container">
+					<div class="first__section_left">
+						<h1>Таможенный <br>представитель</h1>
+						<p>Надежный таможенный представитель<br>
+						Оформление деклараций в кратчайщие сроки. <br>
+						Мы решим любые таможенные вопросы и поможем в их решении. <br> 
+						Полный спектр услуг: ВЭД, Таомженной оформление, Транспортные услуги.</p>	
+						<button class="btn btn__red">Рассчитать перевозку</button>
+						<button class="btn btn__blue">Оставить заявку</button>
+					</div>
+					<div class="first__section_right">
+						<img src="img/bg.svg">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-us__section">
+			<div class="container">	
+				<div class="flex-container">
+					<div class="about-us__image">
+						<img src="img/about.svg" alt="Баткомплект">
+					</div>
+					<div class="about-us__content">
+						<h2>О нас</h2>
+						
+						<p>«Балткомплект» — таможенный представитель/брокер в России с 20-летним опытом работы.</p>
+						
+						<p>Предоставляем услуги по всей России. Работаем на Балтийской, Акцизной, Пулковской, Санкт-Петербургской, Новороссийской, Белгородской, Ростовской и Владивостокской таможнях.</p>
+						
+						<p>Мы пользуемся в Северо-Западном округе наибольшим авторитетом и доверием клиентов. К нам за помощью обращаются различные организации, занимающиеся внешнеэкономической деятельностью: 
+						<br> <b>юридические лица, коммерческие структуры, государственные предприятия.</b></p>
+
+						<p>Наша компания внесена в «Реестр таможенных представителей». </p>
+
+						<p>В 2003 г. наша компания получила статус Действительного члена Региональной Ассоциации таможенных представителей «Северо-Запад».</p> 
+
+						<p>А с ноября 2010 года вошла в состав «Гильдии профессиональных участников рынка оказания услуг в области таможенного дела и внешнеэкономической деятельности "ГЕРМЕС"».</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+			
+		<section class="strength__section">
+			<div class="container">
+				<h2>Наши сильные стороны</h2>
+
+				<div class="flex-container">
+					<div class="strength__content">	
+						<div class="strength__content_elem">
+							<h3>Низкие цены на услуги</h3>
+							<p>Объемы позволяют нам найти наиболее экономичный и эффективный способ реалзиации вашего запроса по гибким ценам и лучшему сервису.</p>
 						</div>
-						<div class="content">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa cupiditate aliquam harum perferendis fuga ipsam eveniet reiciendis. Assumenda ex aliquid eius obcaecati. Ex possimus officiis laborum ab facilis. Blanditiis.</p>
+					
+						<div class="strength__content_elem">
+							<h3>Клиентоориентированность</h3>
+							<p>Наши менеджеры профессионалы и всегда на связи. они вежливо и подробно опишут зачем нужны те или иные затратыи помогут в любом вопросе. </p>
+						</div>
+					
+						<div class="strength__content_elem">
+							<h3>Индивидуальный подход </h3>
+							<p>У каждого нашего клиента есть личный менеджер, который всегда на связи и контролирует весь процесс.</p>
+						</div>
+						
+						<div class="strength__content_elem">
+							<h3>Оперативность всех работ</h3>
+							<p>Выпуск деклараций в день подачи. Помощь в подготовке всей документации. Работаем 24/7.</p>
+						</div>
+					</div>		
+					<div class="strength__form">
+						<div class="form">
+							<h3>Оставьте заявку на расчет полной комплексной стоимости</h3>
+							<p>Обязательно укажите в запросе: 
+								<br>- Описание груза
+								<br>- Упаковочный лист или инвойс, 
+								<br>- Укажите коды ТН ВЭД ваших товаров;
+								<br>- Маршруты (пункты отправления и доставки);
+								<br>- Условия контракта.</p>
+
+								<p>	После того, как запрос будет обработан нашими менеджерами, мы информируем вас о стоимости наших услуг по транспортировке и таможенному оформлению вашего груза.</p>
+
+								<button class="btn">Оставить заявку</button>
 						</div>
 					</div>
 				</div>
-
-				<ul class="parallax__list">
-					<li data-depth="0.05"><div class="parallax__bg parallax__bg_2"></div></li>
-					<li data-depth="0.02"><div class="parallax__bg parallax__bg_3"></div></li>
-
- 					<li data-depth="0.50"><div class="parallax__wave parallax__wave_7"></div></li>
-					<li data-depth="0.45"><div class="parallax__wave parallax__wave_6"></div></li>
-					<li data-depth="0.40"><div class="parallax__wave parallax__wave_5"></div></li>
-				
-					<li data-depth="0.30"><div class="parallax__ship"></div></li>
-										
-					<li data-depth="0.30"><div class="parallax__wave parallax__wave_4"></div></li>				
-					<li data-depth="0.25"><div class="parallax__wave parallax__wave_3"></div></li>
-					<li data-depth="0.20"><div class="parallax__wave parallax__wave_2"></div></li>
-					<li data-depth="0.15"><div class="parallax__wave parallax__wave_1"></div></li>
-				</ul>
 			</div>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script defer src="js/jquery.parallax.js"></script>
-		<script defer src="js/script.js"></script>
+		</section>
+
+		<img class="blog__bg" src="img/blog.svg" >
+
+		<section class="blog__section">
+			<div class="container">
+
+				<h2>Блог</h2>
+
+				<div class="flex-container">
+					<div class="blog__elem">
+						<a href="#">
+							<h3>Ответы <br>на популярные <br>вопросы</h3>
+							<p>Какие документы нужны при таможенном оформлении?</p>
+						</a>	
+					</div>
+					<div class="blog__elem">
+						<h3>Интересные кейсы<br> от “Балткомплект”</h3>
+						<p><b>Входные данные:</b> Длинный текст от компании Балткомплект о том как они релизовывали проекты. Длинный текст от компании Балткомплект о том как они релизовывали проекты. </p>
+						<p><b>Как мы работали:</b> Длинный текст от компании Балткомплект о том как они релизовывали проекты. Длинный текст от компании Балткомплект о том как они релизовывали проекты. Длинный текст от компании Балткомплект о том как они релизовывали проекты. </p>
+					</div>
+					<div class="blog__elem">
+						<h3>Нужна необычная перевозка <br>грузов? холодильник или <br>опасный груз?</h3>
+						<p>Расскажем и осуществим вместе с компанией “Балткомплект”. 
+						Вся справочная информация в нашем информационном портале</p>
+					</div>
+					<div class="blog__elem">
+						<h3>Таможенные сборы<br>Таможенное оформление<br>Таможенные пошлины</h3>
+						<p>В чем разница?
+						Зачем они нужны?
+						Как не переплатить за услуги? 
+						Расскажем и покажем вместе с компанией “балткомплект”</p>
+					</div>
+					<div class="blog__elem">
+						<h3>Свежие <br>новости</h3>
+						<p>Публикуем только самое интересное и важное в мире таможни</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="stuff__section">
+			<div class="container">
+				<h2>Наши специалисты</h2>
+
+				<div class="slide">
+						<div class="stuff__elem">
+							<img src="img/stuff/malkova.webp" alt="Балткомплект">
+							<h3>Анна Малкова</h3>
+							<p>Менеджер по работе с клиентами
+							ВЭД, Таможенное оформление, еще какой то текст</p>
+							<a href="tel:">+7 (000) 999 99-99</a>
+						</div>
+						<div class="stuff__elem">
+							<img src="img/stuff/Klokov.webp" alt="Балткомплект">
+							<h3>Анна Малкова</h3>
+							<p>Менеджер по работе с клиентами
+							ВЭД, Таможенное оформление, еще какой то текст</p>
+							<a href="tel:">+7 (000) 999 99-99</a>
+						</div>
+						<div class="stuff__elem">
+							<img src="img/stuff/Malanchuk.webp" alt="Балткомплект">
+							<h3>Анна Малкова</h3>
+							<p>Менеджер по работе с клиентами
+							ВЭД, Таможенное оформление, еще какой то текст</p>
+							<a href="tel:">+7 (000) 999 99-99</a>
+						</div>
+						<div class="stuff__elem">
+							<img src="img/stuff/Matveev.webp" alt="Балткомплект">
+							<h3>Анна Малкова</h3>
+							<p>Менеджер по работе с клиентами
+							ВЭД, Таможенное оформление, еще какой то текст</p>
+							<a href="tel:">+7 (000) 999 99-99</a>
+						</div>
+						<div class="stuff__elem">
+							<img src="img/stuff/Nebogov.webp" alt="Балткомплект">
+							<h3>Анна Малкова</h3>
+							<p>Менеджер по работе с клиентами
+							ВЭД, Таможенное оформление, еще какой то текст</p>
+							<a href="tel:">+7 (000) 999 99-99</a>
+						</div>
+						<div class="stuff__elem">
+							<img src="img/stuff/Nikitin.webp" alt="Балткомплект">
+							<h3>Анна Малкова</h3>
+							<p>Менеджер по работе с клиентами
+							ВЭД, Таможенное оформление, еще какой то текст</p>
+							<a href="tel:">+7 (000) 999 99-99</a>
+						</div>
+				</div>
+			</div>
+		</section> 
+
+		<section class="reviews">
+			<div class="container">
+				<h2>Отзывы</h2>
+				<div class="reviews__container">
+					<div id="wpac-review"></div>
+					<script type="text/javascript">
+						wpac_init = window.wpac_init || [];
+						wpac_init.push({widget: 'Review', id: 29419});
+						(function() {
+						    if ('WIDGETPACK_LOADED' in window) return;
+					    	WIDGETPACK_LOADED = true;
+						    var mc = document.createElement('script');
+					   		mc.type = 'text/javascript';
+					    	mc.async = true;
+					    	mc.src = 'https://embed.widgetpack.com/widget.js';
+					    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+						})();	
+					</script>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer__white">
+				<div class="flex-container">
+					<div class="footer__white_elem">
+						<h1>&#9426; Балткомплект</h1>
+						<p>Таможенный брокер Северо-Запада</p>
+					</div>
+					<div class="footer__white_elem">
+						<img src="img/footer/LO-Palata.svg" alt="Ленинградская областная торгово-промышленная палата">
+					</div>
+					<div class="footer__white_elem">
+						<img src="img/footer/FR-Palata.svg" alt="Финско-Российская торговая палата">
+					</div>
+					<div class="footer__white_elem">
+						<img src="img/footer/Hermes.svg" alt="Гермес Гильдия профессионалов ВЭД">
+					</div>
+				</div>
+			</div>
+		</footer>
+	
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

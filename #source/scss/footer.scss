@@ -1,0 +1,25 @@
+.footer__white{
+	.flex-container{
+		justify-content: space-around;
+		align-items: center;
+		height: 120px;
+		
+		.footer__white_elem{
+			&:first-child{
+				flex: 49% 0 0;
+			}
+			h1{
+				font-weight: 600;
+				font-size: 1.8em;
+				line-height: 22px;
+				color: $dark;
+			}
+			p{
+				font-weight: normal;
+				font-size: 1.2em;
+				line-height: 15px;
+				color: $dark;	
+			}
+		}
+	}
+}
