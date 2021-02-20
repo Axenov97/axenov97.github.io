@@ -1,0 +1,48 @@
+
+@import "slick.scss";
+@import "slick-theme.scss";
+
+.stuff__section{
+	.slide{
+		width: 85%;
+		margin: 0 auto;
+		padding: 1% 0;
+		z-index: 0;
+		.slick-current{
+		    .stuff_elem{
+		        box-shadow: 4px -10px 15px rgba(0, 0, 0, 0.2)!important;
+		    }
+		}
+		.stuff__elem{
+			max-width: 285px;
+			height: 440px;
+			text-align: start;
+			background: #FFFFFF;
+			box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.2);
+			border-radius: 6px;
+			padding-bottom: 24px;
+			h3{
+				font-style: normal;
+				font-weight: 600;
+				font-size: 1.8em;
+				line-height: 24px;
+				color: #161F26;
+				margin:16px;
+			}
+			p, a{
+				margin: 16px;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 1.4em;
+				line-height: 18px;
+				color: #161F26;
+			}
+			img{
+				border-radius: 6px 6px 0 0;
+				width: 100%;
+				height: 285px;
+				object-fit: cover;
+			}
+		}
+	}	
+}

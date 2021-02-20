@@ -1,0 +1,49 @@
+.blog__bg{
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+.blog__section{
+	.flex-container{
+		flex-wrap: wrap;
+		.blog__elem{
+			flex: 1 1 auto; 
+			background: #FFFFFF;
+			margin: 2% 1% 0;
+			box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+			transition: all .4s;
+			a, a:hover, a:active, a:focus{
+				color: $dark;
+			}
+
+			&:hover{
+				transform: translateY(-2%);
+				box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+			}
+			&:nth-child(1){
+				flex: 33% 0 0;
+				background:  url(../../img/blog/blogFirst.svg) right 0 / 50% no-repeat;
+				background-color: $white;
+			}
+			&:nth-child(2){
+				flex: 63% 0 0;
+				background:  url(../../img/blog/blogSecond.svg) right 0 / 50% no-repeat;
+				background-color: $white;
+			}
+			&:nth-child(3){flex: 43% 0 0;}
+			&:nth-child(4){flex: 33% 0 0;}
+			&:nth-child(5){flex: 18% 0 0;}
+			h3{
+				margin: 24px;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 3em;
+				line-height: 30px;
+				color: #161F26;
+			}
+			p{
+				margin: 24px;
+			}
+		}
+	}
+}
